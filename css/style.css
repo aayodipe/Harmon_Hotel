@@ -1,0 +1,167 @@
+/* Color Theme Swatches in Hex */
+.Two-jellyfish-on-a-blue-background-1-hex { color: #0424D9; }
+.Two-jellyfish-on-a-blue-background-2-hex { color: #031CA6; }
+.Two-jellyfish-on-a-blue-background-3-hex { color: #03178C; }
+.Two-jellyfish-on-a-blue-background-4-hex { color: #020F59; }
+.Two-jellyfish-on-a-blue-background-5-hex { color: #3DADF2; }
+
+
+
+html{
+
+    /* (10px/16px) X 100% */ /*This is in order to use rem*/
+    font-size:62.5%;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+ul {
+       list-style:none;
+       padding: 0;
+     }
+li {
+    list-style: none;
+}
+
+.wrapper{
+    width:auto;
+    max-width: 1200px;
+}
+.sidebar {
+    width: 6rem;
+    height: 100%;
+    background-color: #dcd6eb;
+    position:fixed;    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;    
+}
+
+/* Menu */
+.menu__icons {
+    margin-top: 2rem;
+    cursor: pointer;  
+   
+
+}
+
+.menu__icons .line {
+    height: .2rem;
+    background-color: #222;
+    margin-top: .5rem;
+    transition: width 1.1s;
+    
+}
+
+.line-1,.line-3 {
+    width: 1.8rem
+}
+.line-2 {
+    width:2.5rem
+}  
+
+/* menu hover */
+.menu__icons:hover div{
+    width: 2.5rem;    
+}
+
+/* Social Media Icons  */
+.social__media ul{
+    display: flex;
+    height:25rem;
+    flex-direction: column;
+    justify-content:space-evenly;
+      
+}
+.social__link {
+    font-size: 2rem;
+    color:#777;
+    transition: color .4s
+}
+
+.social__link:hover {
+    color: #77777783 ;
+}
+
+.date {
+ font-size: 1.5rem;
+ columns: #555;
+ margin-bottom: 1rem;
+}
+
+/* Navigation  */
+.navigation {
+    margin-left: 6rem;
+    position: fixed;
+    width: 40rem;
+    height: 100%;   
+    background:linear-gradient(to top, rgba(12, 12, 12, 0.822), rgba(51, 51, 51, 0.376)), url(../images/hotel1.jpg) no-repeat center /cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;   
+}
+
+.navigation__heading {
+    font-size:4rem;
+    color:rgba(218, 2, 2, 0.616);
+    text-align:center;
+
+
+}
+.navigation__search input {
+outline-style: none;
+    width:25rem;
+    height: 2.5rem;
+    padding: 1rem 1.5rem;
+    background-color: rgb(202, 201, 201);
+    border-radius:10rem;
+    border:.1rem solid #222;
+    color: rgb(90, 90, 90);
+    font-size: 1.5rem;
+    outline: none;  
+    transition: background-color .6s;
+    
+}
+.navigation__search input:active{
+    background-color: rgba(202, 201, 201,.2);
+}
+
+
+.navigation__search button { 
+background-color: transparent;
+border:none;
+position: relative;
+left:-4rem;
+outline:none;
+cursor:pointer;
+    
+}
+
+/* Navigation List */
+
+.navigation__list {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+   
+}
+.navigation__link{
+    text-decoration: none;
+    color:#fff;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 400;
+    
+}
+
+
+
