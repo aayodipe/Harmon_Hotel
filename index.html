@@ -20,15 +20,23 @@
     <div id="wrapper">
         <!-- Navbar -->
         <div class="navbar">
-            
+            <!-- creating click event in css2 -->
+
+            <!-- step1: create an input with a type of checkbox -->
+                <input type="checkbox" class="checkout" id="click">
             <!-- Sidebar -->
+            
             <div class="sidebar">
                 <!-- Menu bar -->
+<!-- Wrap menu icons with a label  -->
+
+            <label for="click">
                 <div class="menu__icons">
                     <div class="line line-1"></div>
                     <div class="line line-2"></div>
                     <div class="line line-3"></div>             
                 </div>
+            </label>        
                 <!-- Social Media -->
                 <div class="social__media">
                     <ul class="social__media__list">
@@ -58,32 +66,33 @@
                     <date>2020</date>
                 </div>
             </div>
+                <!-- Start navigation -->
+                <nav class="navigation">
+                    <div class="navigation__header">
+                        <h1 class="navigation__heading">Altech Hotel</h1>
+                        <form action="" class="navigation__search">
+                            <input type="text" class="navigation__search__input" placeholder="Search...">
+                            <button class="navigation__button">
+                                <i class="fas fa-search"></i>
+                            </button> 
+                        </form>
+                    </div>
+                    <!-- Navlist  -->
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="#" class="navigation__link">home</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">about us</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">rooms</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">events</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">customers</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">contact</a></li>
+                    </ul>
+                    <div class="copyright">
+                        <p>&copy; <date>2020</date>. All Rights Reserved</p>
+                    </div>
+                </nav>
         </div>
         <!-- End of Sidebar  -->
-        <!-- Start navigation -->
-            <nav class="navigation">
-                <div class="navigation__header">
-                    <h1 class="navigation__heading">Altech Hotel</h1>
-                    <form action="" class="navigation__search">
-                        <input type="text" class="navigation__search__input" placeholder="Search...">
-                        <button class="navigation__button">
-                            <i class="fas fa-search"></i>
-                        </button> 
-                    </form>
-                </div>
-                <!-- Navlist  -->
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link">home</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">about us</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">rooms</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">events</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">customers</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">contact</a></li>
-                </ul>
-                <div class="copyright">
-                    <p>&copy; <date>2020</date>. All Rights Reserved</p>
-                </div>
-            </nav>
+    
         <!-- End navigation -->
         <!-- End of NavBar -->
     </div>
