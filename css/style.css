@@ -79,7 +79,7 @@ p {
 }
 section {
     display: flex;     
-    margin: 10rem 6rem;
+    margin: 10rem 0 10rem 6rem;
 }
 
 /* Menu */
@@ -413,7 +413,7 @@ color:#e76a6a9d;
 
 /* About Us  */
 
-.about__us,.room {
+.about__us,.room,.customers {
   padding: 0 0 0 10rem;
 }
 .about__us__header  {
@@ -570,3 +570,65 @@ flex-flow: column nowrap;
 .room_card_btn:active {
       width: 17rem;
 }
+
+/* customer  */
+
+.customers {
+    flex-flow: column nowrap;
+    padding: 8rem;
+    background-color: #15141b;
+  
+}
+.customerd_section_text {
+    font-size: 1.8rem;
+    color:#ddd;
+    width: 50%;
+    margin: 2rem auto 8rem auto;
+    text-align: center;
+}
+.customers__heading {
+    color:#b85d1c
+}
+
+.customers_card_wrapper {
+    display: flex; 
+    justify-content: space-evenly;
+}
+.customer_card {
+    display: flex;
+   background-color: #eee;
+    margin-top: 2rem;
+    width: 60rem;
+   
+
+}
+.customer_info {
+    padding: 0 2rem;
+}
+.customer_name {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.customer_image_wrapper {
+    margin: auto 0;
+}
+
+.customer_card img {
+    width: 20rem;
+    margin-left: -1.3rem;
+}
+.customer_title {
+    color: #b85d1c;
+}
+.customer_message-1 {
+    font-size: 1.2rem;
+    font-style:italic;
+    color: #b85d1c;
+}
+.customer_message-2 {
+    font-size: 1.3rem;
+    font-style:italic;
+    columns: #b85d1c;
+}
+
