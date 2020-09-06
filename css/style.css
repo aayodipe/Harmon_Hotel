@@ -62,6 +62,10 @@ p {
     margin-right: 3rem;
     margin-top: 0;
 }
+img{
+    width: 20rem;
+    height: 20rem;
+}
 .wrapper{
     width:auto;
     max-width: 1200px;
@@ -592,6 +596,7 @@ flex-flow: column nowrap;
 
 .customers_card_wrapper {
     display: flex; 
+    flex-flow: row wrap;
     justify-content: space-evenly;
 }
 .customer_card {
@@ -632,3 +637,120 @@ flex-flow: column nowrap;
     columns: #b85d1c;
 }
 
+/* Footer  */                              
+footer {
+    margin-left: 6rem;
+}
+.footer_main_part {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    background-color: #1c1c1c;
+
+}
+
+.footer_heading{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color:goldenrod;
+    margin: 1rem 0 3rem 0;;
+
+}
+.footer_list {
+    padding: 0;
+    list-style: none;
+}
+.footer_list_item {
+    margin-bottom: 2rem;
+}
+.footer_list_link {
+    text-decoration:none;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    color: #bbb;
+}
+.contact p {
+    font-size: 1.5rem;
+    color: #bbb;
+    margin-bottom: 4rem;
+}
+
+.footer_form {
+    display: flex;
+}
+
+.footer_input {
+    width: 25rem;
+    padding: 1rem;
+    /* font-family: Robo; */
+    font-size: 1.8rem;
+    color: #444;
+    outline:none;
+}
+.footer_btn {
+    padding: 1rem;
+    background-color: #b85d1c;
+    color: #ddd;
+    border:none;
+}
+
+.gallary {
+    max-width: 45rem;
+
+}
+
+.image_wrapper {
+    width: 12rem;
+    margin:.4rem;
+    overflow: hidden;
+
+
+}
+
+.footer_image {
+    width: 100%;
+    height: 12em;
+    transition: all .5s;
+    height: 100%;
+    backface-visibility: hidden;
+
+}
+
+.gallary_images{
+    display: flex;
+    flex-wrap:wrap;
+    object-fit: contain;
+   
+}
+.footer_image:hover {
+    transform:scale(1.3);
+    opacity: .8;
+
+}
+
+
+.creator_part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1.2rem 4rem;
+    background-color: #111;
+}
+
+.copyright_text {
+    font-size: 1.3rem;
+    color: #aaa;
+
+
+}
+
+.text_right {
+    font-size: 1.4rem;
+    color: #bbb;
+    margin:.5rem;
+}
+.text_right .designer{
+    color:tomato
+}
