@@ -1,12 +1,4 @@
-/* Color Theme Swatches in Hex */
-.Two-jellyfish-on-a-blue-background-1-hex { color: #0424D9; }
-.Two-jellyfish-on-a-blue-background-2-hex { color: #031CA6; }
-.Two-jellyfish-on-a-blue-background-3-hex { color: #03178C; }
-.Two-jellyfish-on-a-blue-background-4-hex { color: #020F59; }
-.Two-jellyfish-on-a-blue-background-5-hex { color: #3DADF2; }
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 html{
 
     /* (10px/16px) X 100% */ /*This is in order to use rem*/
@@ -18,6 +10,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #ddd; 
   }
 ul {
        list-style:none;
@@ -26,7 +19,49 @@ ul {
 li {
     list-style: none;
 }
-
+h1, h2,h3,h4,h5,h6 {
+    font-family: 'Josefin Sans', serif;
+}
+h1 {
+    font-size: 3.5rem;
+    font-weight: 400;    
+    color:#555;
+    text-transform: uppercase;
+    text-align:center;
+    margin-bottom: 2.0rem;
+}
+h2 {
+    font-size: 2.5rem;    
+    color:#555;
+    font-weight: 400;    
+    text-transform: uppercase;
+    text-align:center;
+    margin-bottom: 2.0rem;
+}
+h3 {
+    font-size:2rem;
+    font-weight: 300;
+    color:#555;
+    margin-bottom: 2.0rem;
+}
+h4 {
+    font-size:1.5rem;
+}
+h5 {
+    font-size:1rem;
+}
+h6 {
+    font-size:.7rem;
+}
+p {
+    font-size: 1.4rem;
+    font-weight: 200;
+    letter-spacing: .1rem;
+    font-family: 'Roboto Slab', serif;
+    text-align: justify;
+    margin-right: 3rem;
+    margin-top: 0;
+}
 .wrapper{
     width:auto;
     max-width: 1200px;
@@ -41,6 +76,10 @@ li {
     justify-content: space-between;
     align-items:center;    
     z-index:10
+}
+section {
+    display: flex;     
+    margin: 10rem 6rem;
 }
 
 /* Menu */
@@ -324,6 +363,7 @@ color:#e76a6a9d;
    margin-bottom: 0;
    font-family: 'Josefin', serif;
    animation: anim 1s;
+   color:#fff;
 }
 
 .banner_content_text {
@@ -373,28 +413,18 @@ color:#e76a6a9d;
 
 /* About Us  */
 
-.about__us {
-    margin-left: 6rem;
-    display: flex;  
-    background-color: #ddd; 
+.about__us,.room {
+  padding: 0 0 0 10rem;
 }
-.about__us__content {
+.about__us__header  {
     flex: 0 1 50%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10rem;
+    padding-top: 0;
+    
    
 }
-.about__us__heading {
-    font-size: 4rem;
-    font-weight: 400;
-    font-family: 'Josefin Sans', serif;
-    color:#555;
-    text-transform: uppercase;
-    text-align:center;
-    margin-bottom: 1.3rem;
-}  
 
 /* Underline  */
 .underline {
@@ -418,12 +448,36 @@ color:#e76a6a9d;
 }
 
 .about__us__images {
+
     flex:1 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    position: relative;
+    
 }
 
 .about__us__images img {
-    width: 22rem;
-    height: 22rem;
+    position: absolute;
+    width: 32rem;
+    object-fit: contain;
+    top:50%;
+    left:50%;
+    box-shadow: 0 3rem 6rem #553028;
+    border: .1rem solid #333;
+    border-radius:.2rem;
+}
+.image-1{
+    transform: translate(-20%, -90%);
+}
+.image-2{
+    transform: translate(-70%, -70%);    
+}
+.image-3{
+    transform: translate(-50%, -50%);    
+}
+.image-4{
+    transform: translate(-30%, -30%);
 }
 
 
@@ -431,14 +485,88 @@ color:#e76a6a9d;
 display: flex;
 flex-flow: column nowrap;
 }
-
-.sub_heading{
-    font-size: 2rem;
-    font-family: "Josefin Sans";
-    font-weight: 300
-    
+.about__us__btn {
+    width: 20rem;
+    margin-top: 2rem;
+    padding: 1rem 1.3rem;
+    border-radius: 3rem;
+    border:0;
+    color:#fff;
+    font-size: 1.7rem;
+    background: linear-gradient(rgba(131, 88, 54,.4),rgba(131, 88, 54,.7));  
+    transition: width .5s;  
+    outline: none;
+    cursor: pointer;
 }
 
-.about__us__paragraph{
+.about__us__btn:hover {
+    background: linear-gradient(rgba(131, 88, 54,.9),rgba(131, 88, 54,.7));  
+    }
+.about__us__btn:active {
+     transform: translateY(.3rem);
+    }
 
+
+    /* Room  */
+.room{    
+    display: flex;
+    flex-flow:column nowrap;
+
+}
+.room__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  
+}
+.room__card {
+
+    background-color: rgba(115, 77, 55,.1);
+    margin-top: 4rem;
+    flex:1 0 1;
+    width: 40rem;
+    margin-right: 4rem;
+}
+.room__wrapper img {
+    width:100%;
+   }
+
+
+.room_card_content {
+    padding: 1rem 1rem;
+    background-color: #15141b;
+    color: #fff;
+
+}
+.sub_heading{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #b85d1c;
+
+}
+
+.room_price {
+    font-size: 2.9rem;
+    text-align: right;
+}
+
+.room_card_btn {
+    width:16rem;
+    height: 3.5rem;
+    background: transparent;
+    color:#fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline:none;
+    border: .1rem solid #b85d1c;
+    border-radius: 4rem;
+    transition: background-color .5s;
+}
+
+
+.room_card_btn:hover {
+      background-color: #b85d1c;
+}
+.room_card_btn:active {
+      width: 17rem;
 }
