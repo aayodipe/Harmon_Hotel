@@ -62,10 +62,7 @@ p {
     margin-right: 3rem;
     margin-top: 0;
 }
-img{
-    width: 20rem;
-    height: 20rem;
-}
+
 .wrapper{
     width:auto;
     max-width: 1200px;
@@ -733,6 +730,7 @@ footer {
 
 .creator_part{
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     padding:1.2rem 4rem;
