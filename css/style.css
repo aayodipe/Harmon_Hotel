@@ -478,7 +478,7 @@ color:#e76a6a9d;
     object-fit: contain;
     top:50%;
     left:50%;
-    box-shadow: 0 3rem 6rem #553028;
+    box-shadow: 0 .5rem 3rem #553028;
     border: .1rem solid #333;
     border-radius:.2rem;
 }
@@ -597,7 +597,7 @@ flex-flow: column nowrap;
 .customer_section_text {
     font-size: 1.8rem;
     color:#ddd;
-    width: 50%;
+    width: 80%;
     margin: 2rem auto 8rem auto;
     text-align: center;
 }
@@ -747,13 +747,16 @@ footer {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     padding:1.2rem 4rem;
     background-color: #111;
+ 
 }
 
 .copyright_text {
     font-size: 1.3rem;
     color: #aaa;
+    ;
 
 
 }
@@ -768,15 +771,106 @@ footer {
 }
 
 
-/* Media Queries */
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { ... }
+/* Media Queries  */
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
+@media(max-width: 1072px){
+ 
+    .room__card {
+ 
+        width: 35rem;
+    }
+}
+@media(max-width: 973px){
+    .banner_content_heading {
+        font-size:  5.5rem;
+        font-weight: 400; 
+    }
+    .room__card {
+ 
+        width: 30rem;
+    }
+}
+@media(max-width: 880px){
+    .banner_content_heading {
+        font-size:  5.0rem;
+        font-weight: 400; 
+    }
+    .about_us_container{
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
+    }
+    .about__us__images {
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+    flex:1 1;
+    display: none;
+    justify-content: center;
+    align-items: center;  
+    position: relative;
+    padding: 4rem 0 0 0;
+    overflow: hidden;
+    
+}
+.about__us__images img {
+    position: relative;
+    width: 32rem;
+    object-fit: contain;
+    top:50%;
+    left:50%;
+ 
+}
+    .room__card {
+ 
+        width: auto;
+    }
+}
+@media(max-width: 579px){
+    .banner_content_heading {
+        font-size:  4rem;
+        font-weight: 400; 
+    }
+    .room__card {
+ 
+        width: auto;
+    }
+}
+@media(min-width: 300px){
+    section {
+        display: flex;     
+        margin: 0 0 10rem 6rem;
+    }
+    .about__us,.room,.customers {
+        padding: 0 0 10rem 6rem ;
+        margin: 0;
+      }
+      .room__wrapper {
+        
+          margin: auto 0;
+      }
+
+      .room__card {
+ 
+        width: 100vw;
+    }
+    .banner_content_heading {
+        font-size:  3rem;
+        font-weight: 400; 
+    }
+
+    .banner_content_text {
+        font-size: 2rem;
+    }
+    .footer_input {
+        width: 16rem;
+        padding: 1rem;
+        /* font-family: Robo; */
+        font-size: 1.8rem;
+        color: #444;
+        outline:none;
+    }
+    .customers__heading{
+        font-size: 20px;
+    }
+}
+
