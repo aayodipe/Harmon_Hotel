@@ -834,8 +834,9 @@ footer {
  
         width: auto;
     }
+    
 }
-@media(min-width: 300px){
+@media(max-width: 450px){
     section {
         display: flex;     
         margin: 0 0 10rem 6rem;
@@ -871,6 +872,11 @@ footer {
     }
     .customers__heading{
         font-size: 20px;
+    }
+    .customer_section_text {
+      
+        width: 100%;
+       
     }
 }
 
